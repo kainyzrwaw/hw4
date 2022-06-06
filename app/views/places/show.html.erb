@@ -6,7 +6,7 @@
 <div class="col-sm-9">
 <h2 class="pb-3">My Posts</h2>
 </div>
-<div class="col-sm-3">
+<div class="col-sm-3 text-end">
 <p>
   <a class="btn btn-success" href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
@@ -14,7 +14,7 @@
 
 <div class="row">
 <% for post in @posts %>
-  <div class="col-md-4">
+  <div class="col-lg-4 col-md-6 col-sm-9">
   <% if post.uploaded_image.attached? %>
   <h3><%= post["title"] %></h3>
   <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
