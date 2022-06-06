@@ -28,9 +28,9 @@
           <a class="nav-link" href="/logout">Logout</a>
         </li>
         </ul>
-        <h3 class="nav-item">
-        <%= @current_user["username"] %> 
-        </h3>
+        <p class="nav-item">
+        You are logged in as <%= @current_user["username"] %> 
+        </p>
         <%else%>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
