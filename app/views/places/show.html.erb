@@ -17,11 +17,11 @@
   <div class="col-lg-4 col-md-6 col-sm-9">
   <% if post.uploaded_image.attached? %>
   <h3><%= post["title"] %></h3>
-  <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
   <h4><%= post["posted_on"] %></h4>
+  <img src="<%= url_for(post.uploaded_image) %>" class="img-fluid">
   <p><%= post["description"] %></p>
   <% else %>
-    <h3><%= post["title"] %></h3>
+  <h3><%= post["title"] %></h3>
   <h4><%= post["posted_on"] %></h4>
   <p><%= post["description"] %></p>
   <% end %>
