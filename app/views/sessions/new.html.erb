@@ -3,10 +3,18 @@
 <%= form_with :url => "/sessions" do |form| %>
 
  <p>
+ <div class="row">
+ <div class="col-md-3">
     <%= form.label "email" %>
     <%= form.text_field "email" %>
+  </div>
+  </div>
+  <div class="row py-4">
+  <div class="col-md-3">
     <%= form.label "password" %>
     <%= form.password_field "password" %>
+  </div>
+  </div>
   </p>
   
   <p>
