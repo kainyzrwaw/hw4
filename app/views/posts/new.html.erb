@@ -1,5 +1,5 @@
 <% if @current_user %>
-<h1 class="pt-4 pb-4">New Post</h1>
+<h1 class="py-4">New Post</h1>
 
 <%= form_with :model => @post do |form| %>
   <p>
@@ -14,7 +14,7 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
-  <p>
+  <p class="btn btn-primary">
     <%= form.submit %>
   </p>
   <%= form.hidden_field "place_id" %>

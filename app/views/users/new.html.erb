@@ -1,4 +1,4 @@
-<h1 class="pt-4 pb-4">New User Account</h1>
+<h1 class="py-4">New User Account</h1>
 
 <%= form_with :model => @user do |form| %>
   <p>
@@ -13,7 +13,7 @@
     <%= form.label "password" %>
     <%= form.password_field "password" %>
   </p>
-  <p>
+  <p class="btn btn-primary">
     <%= form.submit "Sign up" %>
   </p>
 <% end %>

@@ -1,4 +1,4 @@
-<h1 class="pt-4 pb-4">Login</h1>
+<h1 class="py-4">Login</h1>
 
 <%= form_with :url => "/sessions" do |form| %>
 
@@ -9,7 +9,7 @@
     <%= form.password_field "password" %>
   </p>
   
-  <p>
+  <p class="btn btn-primary">
     <%= form.submit "Login" %>
   </p>
 <% end %>

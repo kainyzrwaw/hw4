@@ -1,6 +1,6 @@
 <% if @current_user %>
 
-<h1 class="pt-4 pb-4"><%= @place["name"] %></h1>
+<h1 class="py-4"><%= @place["name"] %></h1>
 
 <h2 class="pb-3">My Posts</h2>
 <% for post in @posts %>
@@ -10,11 +10,11 @@
 <% end %>
 
 <p>
-  <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
+  <a class="btn btn-success" href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
 
 <p>
-  <a href="/places">Back to All Places</a>
+  <a class="btn btn-primary" href="/places">Back to All Places</a>
 </p>
 
 <% end %>
